@@ -1,0 +1,143 @@
+
+.file-upload {
+  background-color: beige;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    color: #fff;
+    background: purple;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.file-upload-btn:hover {
+    background: #1aa059;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  border-radius: 50%;
+  border: 5px dashed darkgoldenrod;
+  position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: white;
+  border: 5px dashed goldenrod;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: darkgoldenrod;
+  padding: 130px 0;
+}
+
+.file-upload-image {
+  max-height: 300px;
+  max-width: 300px;
+  margin: auto;
+  border: 7px solid darkgoldenrod;
+    border-radius: 50%;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: darkgoldenrod;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: goldenrod;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.copy_btn {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: darkgoldenrod;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.copy_btn:hover {
+  background: goldenrod;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.copy_btn:active {
+  border: 0;
+  transition: all .2s ease;
+}

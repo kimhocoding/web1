@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <title>AI 강아지 행복지수</title>
+    </head>
+    <body>
+        <section id="main-contents">
+            <div class="wrapper">
+                <div class="title">
+                    <h3 class="main_title">SolaSol</h3>
+                    <h3 class="sub_title">AI Dog Happiness exponent</h3>
+                </div>
+                <div class="intro">
+                    <h1>AI가 분석한<br />우리 댕댕이의 행복점수는?!</h1>
+                    <div class="type">
+                        <ul class="type_list">
+                            <li>95점 이상 : 상위 1% 주인</li>
+                            <li>90점 이상 : 상위 5% 주인</li>
+                            <li>80점 이상 : 상위 20% 주인</li>
+                            <li>95점 이상 : 상위 1% 주인</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="capture">
+                    <div class="lectures">
+                        <h3 class="test-title">
+                            - AI 강아지 행복지수 -
+                        </h3>
+                    </div>
+
+                    <script
+                        class="jsbin"
+                        src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+                    ></script>
+
+                    <div class="file-upload">
+                        <div class="image-upload-wrap">
+                            <input
+                                class="file-upload-input"
+                                type="file"
+                                onchange="readURL(this);"
+                                accept="image/*"
+                            />
+
+                            <div class="drag-text">
+                                <h3>
+                                    우리 댕댕이 사진을 첨부해주세요. <br /><br />
+                                    (정면 사진을 추천해요!)
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="file-upload-content">
+                            <img
+                                class="file-upload-image"
+                                id="face-image"
+                                src="#"
+                                alt="your image"
+                            />
+                            <div id="loading"></div>
+                            <br />
+                            <div id="loading-title">AI가 우리 댕댕이를 분석하고 있습니다...</div>
+                            <br /><br />
+                            <p class="result-message"></p>
+                            <br /><br />
+                            <p class="score"></p>
+                            <br />
+                            <div id="label-container"></div>
+                            <div class="image-title-wrap">
+                                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                                <div class="addthis_inline_share_toolbox_arp1"></div>
+                                <div class="share">
+                                    <div class="url">
+                                        <button type="button" class="copy_btn">
+                                            URL 복사하기
+                                        </button>
+                                    </div>
+                                    <a href="#">
+                                        <button type="button" class="remove-image">
+                                            다시 시도해보기
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="result-data">
+                    <p class="result-explain-title">강아지는 이럴 때 행복해요!</p>
+                    <div class="result-explain">
+                        <ul>
+                            <li>첫번째! 주인과 함께 산책하기</li>
+                            <li>두번째! 주인과 함께 대화하기</li>
+                            <li>세번째! 주인과 함께 놀기</li>
+                            <li>네번째! 주인에게 칭찬받기</li>
+                            <li>다섯번째! 주인에게 스킨십받기</li>
+                            <li>여섯번째! 간식 먹기</li>
+                        </ul>
+                    </div>
+                    <p class="result-explain-title">강아지는 행복하면 신호를 보내요!</p>
+                    <div class="result-explain">
+                        <ul>
+                            <li>첫번째! 입을 벌리고 웃어요.</li>
+                            <li>두번째! 바닥에 등을 대고 누워 꿈틀대요.</li>
+                            <li>세번째! 눈을 가늘게 뜨고 쳐다봐요.</li>
+                            <li>네번째! 꼬리를 크게 흔들어요.</li>
+                            <li>다섯번째! 주인 몸에 기대거나 팔을 핥아요.</li>
+                            <li>여섯번째! 플레이바우를 해요.</li>
+                            <li>일곱번째! 식욕이 왕성해져요.</li>
+                            <li>여덟번째! 주인에게 관심을 집중해요.</li>
+                            <li>아홉번째! 누워서 배를 드러내요.</li>
+                            <li>열번째! 주인의 얼굴과 입 주변을 핥아요.</li>
+                        </ul>
+                    </div>
+                    <p class="result-explain-title">강아지는 이런 행동을 싫어해요!</p>
+                    <div class="result-explain">
+                        <ul>
+                            <li>첫번째! 갑자기 큰소리나 큰 동작을 하는 것</li>
+                            <li>두번째! 먹이나 장난감으로 줄듯말듯</li>
+                            <li>세번째! 모르는 사람이 만지게 두는 것</li>
+                            <li>네번째! 낯선 개와 인위적으로 만나는 것</li>
+                            <li>다섯번째! 양팔로 들어 끌어안는 것</li>
+                            <li>여섯번째! 산책을 급하게 진행하는 것</li>
+                            <li>일곱번째! 오랜 시간 혼자 두는 것</li>
+                            <li>여덟번째! 과하게 짧은 목줄로 산책하는 것</li>
+                            <li>아홉번째! 교육 시 말이 많은 것</li>
+                            <li>열번째! 수면 중 귀찮게 하는 것</li>
+                        </ul>
+                    </div>
+                    <p class="result-explain-title">이 행동은 강아지의 수명을 줄여요!</p>
+                    <div class="result-explain">
+                        <ul>
+                            <li>첫번째! 간접 흡연하는 것</li>
+                            <li>두번째! 비만을 방치하는 것</li>
+                            <li>세번째! 오랜 시간 스트레스에 방치하는 것</li>
+                            <li>네번째! 정기적인 건강검진을 하지 않는 것</li>
+                            <li>다섯번째! 양치질을 소홀히 하는 것</li>
+                            <li>여섯번째! 산책을 게을리 하는 것</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                               <br><br> © 솔라솔 SolaSol 2022. All Rights Reserved.
+                                <br> 제작도움: 조코딩
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="webcam-container"></div>
+
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.image-upload-wrap').hide();
+                        $('#loading').show();
+                        $('#loading-title').show();
+                        $('.file-upload-image').attr('src', e.target.result);
+                        $('.file-upload-content').show();
+                        $('.image-title').html(input.files[0].name);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                    init().then(function () {
+                        console.log('hello');
+                        predict();
+                        $('#loading').hide();
+                        $('#loading-title').hide();
+                    });
+                } else {
+                    removeUpload();
+                }
+            }
+
+            /*function removeUpload() {
+                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                $('.file-upload-content').hide();
+                $('.image-upload-wrap').show();
+            }
+            $('.image-upload-wrap').bind('dragover', function () {
+                $('.image-upload-wrap').addClass('image-dropping');
+            });
+            $('.image-upload-wrap').bind('dragleave', function () {
+                $('.image-upload-wrap').removeClass('image-dropping');
+            });
+            */
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+        <script type="text/javascript">
+            // More API functions here:
+            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+            // the link to your model provided by Teachable Machine export panel
+            const URL = 'https://teachablemachine.withgoogle.com/models/-rcWWU4g4/';
+
+            let model, webcam, labelContainer, maxPredictions;
+
+            // Load the image model and setup the webcam
+            async function init() {
+                const modelURL = URL + 'model.json';
+                const metadataURL = URL + 'metadata.json';
+
+                // load the model and metadata
+                // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                // or files from your local hard drive
+                // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                model = await tmImage.load(modelURL, metadataURL);
+                maxPredictions = model.getTotalClasses();
+
+                labelContainer = document.getElementById('label-container');
+                for (let i = 0; i < maxPredictions; i++) {
+                    // and class labels
+                    labelContainer.appendChild(document.createElement('div'));
+                }
+            }
+
+            // run the webcam image through the image model
+            async function predict() {
+                // predict can take in an image, video or canvas html element
+
+                var image = document.getElementById('face-image');
+                const prediction = await model.predict(image, false);
+                prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+                console.log(prediction[0].className);
+                var resultMessage, resultScore;
+                switch (prediction[0].className) {
+                    case 'happy':
+                        resultScore = prediction[0].probability.toFixed(2) * 100 + '점';
+                        resultMessage = '우리 강아지의 행복지수는?!';
+                        break;
+                    case 'unhappy':
+                        resultScore = 123 - prediction[0].probability.toFixed(2) * 100 + '점';
+                        resultMessage = '우리 강아지의 행복지수는?!';
+                        break;
+                    default:
+                        resultMessage = '식별이 불가능 합니다';
+                }
+
+                $('.score').html(resultScore);
+                $('.result-message').html(resultMessage);
+            }
+        </script>
+        <script>
+            $(function () {
+                let url = window.location.href;
+                let img = $('.result_img img').attr('src');
+
+                $("meta[property='og\\:url']").attr('content', url);
+            });
+
+            const copyBtn = document.querySelector('.copy_btn');
+
+            function copyUrl() {
+                let tmp = document.createElement('input');
+                let url = window.location.href;
+
+                document.body.appendChild(tmp);
+                tmp.value = url;
+                tmp.select();
+                document.execCommand('copy');
+                document.body.removeChild(tmp);
+
+                alert('URL이 복사되었습니다.');
+            }
+
+            copyBtn.addEventListener('click', copyUrl);
+        </script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+            type="text/javascript"
+            src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-636783037ae4cafa"
+        ></script>
+    </body>
+</html>
